@@ -10,7 +10,18 @@
 </head>
 <body>
 
-<img src="https://i.pinimg.com/originals/19/7a/eb/197aebf3c5f0c59aa7aefdda5c0cc470.jpg">
+<img id = "Sponge" src="https://i.pinimg.com/originals/19/7a/eb/197aebf3c5f0c59aa7aefdda5c0cc470.jpg">
+    
+<p id = "Revoked">If this picture is an eyesore for you, click here</p>
+
+    <button type = "button" onclick = "RemoveSponge()">Remove The Sponge</button>
+    
+    <br>
+    
+<p id = "Approved">To return Spongebob from the void, click here and scroll up </p>
+    
+    <button type = "button" onclick = "BringBackSponge()">Bring Back Spongebob</button>
+    
     
 <h1>Marcus Allen Ray</h1>
 <h2> Telephone:330 111 1111/ Email: mray19@kent.edu</h2>
@@ -61,6 +72,31 @@
     
 <br>
     <p class="Primed">Site under Construction</p>
+    
+<script>
+    
+    function RemoveSponge() {
+        
+        document.getElementById("Sponge").style.display = "None"
+        
+        document.getElementById("Revoked").style.display = "None"
+        
+    }
+    
+    function BringBackSponge() {
+        
+        document.getElementById("Sponge").style.display = "Block"
+        document.getElementById("Approved").style.display = "Block"
+        
+    }
+   
+    
+  </script>
+    
+
+    
+   
+    
     
 </body>
 </html>
